@@ -9,6 +9,13 @@ public class ClassicAccount {
 		accountNumber = ac;
 		balance = bal;
 	}
+	public boolean transferState(double amount){
+		if(getBalance() < amount){
+			return false;
+		}
+		return true;
+	}
+
 	
 	public int getAccountNumber() {
 		return accountNumber;
